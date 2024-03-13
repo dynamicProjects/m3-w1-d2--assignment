@@ -8,5 +8,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug')
 app.use(bodyparser.urlencoded({extended: true}))
 app.use('/', route);
+app.use(express.static('public'));
 
 module.exports =app;    
